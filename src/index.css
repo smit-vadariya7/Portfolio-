@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary-bg: #0F0A1F;
+  --color-secondary-bg: #151030;
+  --color-primary-text: #FFFFFF;
+  --color-secondary-text: #B8B8D0;
+  --color-accent: #7209B7;
+  --color-secondary-accent: #4361EE;
+  --color-highlight: #4CC9F0;
+  --gradient-primary: linear-gradient(135deg, #7209B7, #4361EE);
+  --gradient-hover: linear-gradient(135deg, #B5179E, #4CC9F0);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+  background-color: var(--color-primary-bg);
+  color: var(--color-secondary-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-primary-text);
+  font-weight: 700;
+}
+
+.bg-gradient-primary {
+  background: var(--gradient-primary);
+}
+
+.bg-gradient-hover {
+  background: var(--gradient-hover);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.character-float {
+  animation: float 6s ease-in-out infinite;
+}
